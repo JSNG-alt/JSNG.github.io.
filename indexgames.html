@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLIX</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            color: #00FF00;
+            font-family: Arial, sans-serif;
+        }
+
+        .signup-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+        .nav-table {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .nav-table th {
+            background-color: green;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .nav-table a {
+            color: #00FF00;
+            text-decoration: none;
+            display: block;
+        }
+
+        .nav-table th:hover {
+            background-color: darkgreen;
+        }
+
+        hr {
+            height: 2px;
+            color: limegreen;
+            background-color: limegreen;
+            border: none;
+        }
+
+
+        button {
+            background-color: grey;
+            color: #00FF00;
+            border-radius: 100px;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        button a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+
+        .carousel-container {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 50px; 
+        }
+
+        .carousel-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .box {
+            width: 400px;
+            height: 600px;
+            margin: 0 10px 20px 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .box img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+
+        .text-area {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="nav-table">
+        <tr>
+            <th><a href="index.html" title="View homepage">Home</a></th>
+            <th><a href="index2 movies.html" title="View streaming movies">Movies</a></th>
+            <th><a href="indexgames.html" title="You are on this page">Games</a></th>
+        </tr>
+    </table>
+    <div>
+        <div class="signup-button">
+            <button><a href="Loginsignup.html">Sign up</a></button>
+        </div>
+    </div>
+    <br><br><br>
+    <div>
+        <hr>
+        <center>
+            <h1 style="color: rgb(48, 196, 48);">GLIX</h1>
+        </center>
+        <hr>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-content" id="carousel">
+            <div class="box" onclick="openMovieDetails('Movie 1')">
+                <img src="some image.jpeg" alt="Movie 1">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 2')">
+                <img src="some image.jpeg" alt="Movie 2">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 3')">
+                <img src="some image.jpeg" alt="Movie 3">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 4')">
+                <img src="some image.jpeg" alt="Movie 4">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 5')">
+                <img src="some image.jpeg" alt="Movie 5">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 6')">
+                <img src="some image.jpeg" alt="Movie 6">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 7')">
+                <img src="some image.jpeg" alt="Movie 7">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 8')">
+                <img src="some image.jpeg" alt="Movie 8">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 9')">
+                <img src="some image.jpeg" alt="Movie 9">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 10')">
+                <img src="some image.jpeg" alt="Movie 10">
+                <div class="text-area">placeholder</div>
+            </div>
+            <div class="box" onclick="openMovieDetails('Movie 11')">
+                <img src="some image.jpeg" alt="Movie 11">
+                <div class="text-area">placeholder</div>
+            </div>
+ 
+</body>
+
+</html>

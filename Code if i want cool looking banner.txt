@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+<title>GLIX</title>
+<h2>whats good pookies hows it going?</h2>
+<link rel="stylesheet" href="style2.css"
+</head>
+   
+<body style="background-color: black;">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style2.css"
+<body>
+    <div class="box.area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="a">GLIX</a>
+                </div>
+                <nav>
+                    <a href="a">Home </a>
+                    <a href="a">Movies</a>
+                    <a href="a">Games </a>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="banner,area">
+        <h2>Fixed Banner</h2>
+    
+    
+    </div>
+    <div class="content.area">
+        <div class="wrapper">
+            <h2> Text details </h2>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<br>
+<br>
+<br>
+<br>
+<div>
+        <align><center><button><a href="indexsignup.html" >Sign up</a></button></center></align>
+    </a></div>
+</div>
+</body>
+
+<hr style="height: 2px;" style color="limegreen">
+
+<body>
+    <align><center><h1 style="color: limegreen;">GLIX</h1></center></align>
+    <hr>
+
+ </body>
+
+</html>

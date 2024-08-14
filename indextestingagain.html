@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <style>
+        body {
+            background-color: #161617;
+            color: #00FF00;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .nav-table {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        .nav-table th {
+            background-color: green;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .nav-table a {
+            color: #00FF00;
+            text-decoration: none;
+            display: block;
+        }
+        .nav-table th:hover {
+            background-color: darkgreen;
+        }
+        hr {
+            height: 2px;
+            background-color: limegreen;
+            border: none;
+        }
+        .cool-box {
+            border: 2px solid #00FF00;
+            padding: 20px;
+            margin: 20px auto;
+            width: 25%;
+            text-align: left;
+        }
+        .cool-box label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .cool-box input {
+            width: 87%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #00FF00;
+            background-color: black;
+            color: #00FF00;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="nav-table">
+        <tr>
+            <th><a href="index.html" title="You are on this page">Home</a></th>
+            <th><a href="index2 movies.html" title="View streaming movies">Movies</a></th>
+            <th width="60"><a href="index2 movies.html" title="View available games">Games</a></th>
+        </tr>
+    </table>
+    <hr>
+    <div align="center">
+        <div class="cool-box">
+            <form>
+                <body>
+                   <center> <Img src="some image.jpeg" </Img></center>
+                </body>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Kanwar">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Singh">
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="username" placeholder="Kanwar.singh@gmail.com">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <center><button> Submit</button></center>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

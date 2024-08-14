@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <div class="container">
+            <div class="head"> <h3>Post a comment</h3></div>
+            <div><span id="comment">0</span> Comments</div>
+            <div class="text"><p>We are happy to hear from you</p></div>
+            <div class="comments"></div>
+            <div class="commentbox">
+                <img src="user1.png" alt="">
+                <div class="content">
+                    <h4>Comment as:</h4>
+                    <input type="text" value="Anonymous" class="user">
+                </div>
+
+                <div class="commentinput">
+                    <input type="text" placeholder="Enter comment" class="usercomment">
+                    <div class="buttons">
+                        <button type="submit" disabled id="Publish">Publish</button>
+                        <div class="notify">
+                            <input type="checkbox" class="notifyinput"> <span>Notify me</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="policy">Please note: <br>This site is a SCHOOL PROJCET. Comments are NOT an available feature  </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        "use strict";
+
+        const userId = {
+            name: null,
+            identity: null,
+            image: null,
+            message: null,
+            date: null,
+        }
+
+        const userComment = document.querySelector(".usercomment");
+        const publishBtn = document.querySelector("#publish");
+        const comments = document.querySelector(".comments");
+        const userName = document.querySelector(".user")
+
+        userComment.addEventListener("input", e => {
+            if(!userComment.value) {
+                publishBtn.setAttribute("disabled", "disabled");
+                publishBtn.classList.remove("abled")
+            }else {
+                publishBtn.removeAttribute("disabled");
+                publushBtn.classList.add("abled")
+            }
+        })
+    </script>
+
+
+    <style>
+ * {
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+    }
+
+    .container{
+        background: #ffff;
+        padding: 20px;
+        font-family: monospace;
+        width: 500px;
+        box-shadow: 0 0 5px #000;
+
+    }
+
+    .head {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin: 10px 0;
+        font-family: sans-serif;
+        font-size: 0.9cm;
+    }
+
+    .commentbox {
+    
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .commentbox > img {
+        width: 40px;
+    
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .user {
+        border: none;
+        outline: none;
+        margin: 5px 0;
+        color: #808080;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    .commentinput > input {
+        border: none;
+        padding: 10px;
+        padding-left: 0;
+        outline: none;
+        border-bottom: 2px solid blue;
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #808080;
+    }
+
+    .buttons button {
+        padding: 5px 10px;
+        background: lightgrey;
+        color: #808080;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .buttons button.abled {
+        background: blue;
+        color: #fff;
+    }
+
+    .policy {
+        margin: 20px 0;
+        font-size: 0.8cm;
+        font-family: Arial, sans-serif;
+        color: #808080;
+    }
+
+    .policy a{
+        text-decoration: none;
+        color: blue;
+    }
+
+    .notify{
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .notify > input {
+        margin-right: 5px;
+    }
+    </style>
+</body>
+</html>
